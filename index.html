@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form id="search-form">
+          <div class="row">
+          <div class="col-8">
+            <input type="text" placeholder="Enter a city..." autocomplete="off" autofocus="on" id="city-search" />
+          </div>
+          <div class="col-3">
+           <input type="submit" id="city-submit" value="Search" />
+          </div>
+        </form>
+        <h1 id="city">Eugene, OR</h1>
+          <ul>
+          <li id="date">Friday 10:02</li>
+          <li id="weather">Cloudy</li>
+          </ul>
+        <div class="row">
+        <div class="col-6">
+        <ul class="currently">
+        
+        
+        <div>
+          <span id="temp">43</span>
+          
+          </span>
+          </div>
+        
+          </ul>
+        </div>
+        <div class="col-6">
+        <ul class="weather-details">
+        <li id="rain">Precipitation: 0%</li>
+        <li id="humidity">Humidity: 77%</li>
+        <li id="wind">Wind: 2mph</li>
+        </ul>
+        </div>
+        <div class="future-forecast">
+        <div class="row">
+        <div class="tomorrow col-2">
+          Tomorrow<br />
+          ☁️<br />
+          40°/<span class="high"> 49°</span>
+        </div>
+
+        <div class="thursday col-2">
+          Thursday<br />
+          🌧<br />49°/<span class="high"> 58°</span>
+        </div>
+
+        <div class="friday col-2">
+          Friday<br />
+          ☁️<br />48°/<span class="high"> 56°</span>
+        </div>
+
+        <div class="saturday col-2">
+          Saturday<br />
+          🌧<br />44°/<span class="high"> 49°</span>
+        </div>
+
+        <div class="sunday col-2">
+          Sunday<br />
+          🌧<br />42°/<span class="high"> 49°</span>
+        </div>
+
+        <div class="monday col-2">
+          Monday<br />
+          🌧<br />40°/<span class="high"> 49°</span>
+        </div>
+      </div>
+      </div>
+        
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
