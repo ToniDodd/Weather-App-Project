@@ -26,21 +26,22 @@ img {
   text-align: left;
 }
 
-.future-forecast {
-  text-align: center;
-  margin: 80px 0 0 14px;
-  background: #fff;
-  border: 1px solid black;
-  padding: 20px;
+.github {
+  display: block;
+  margin: 0 auto;
 }
 #temp {
   font-size: 70px;
 }
+.wrap {
+  margin: 30px auto;
+  max-width: 700px;
+}
 .weather-app {
   border: 1px solid black;
-  margin: 30px auto;
+
   padding: 25px;
-  max-width: 700px;
+
   background: radial-gradient(
     328px at 2.9% 15%,
     rgb(191, 224, 251) 0%,
