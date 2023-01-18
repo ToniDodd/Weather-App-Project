@@ -1,3 +1,5 @@
+alert("hello");
+
 let now = new Date();
 let date = document.querySelector("#date");
 
