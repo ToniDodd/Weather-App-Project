@@ -17,28 +17,28 @@ let day = days[now.getDay()];
 date.innerHTML = `${day} ${hours}:${minutes}`;
 
 function showWeather(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  console.log(response);
+  document.querySelector("#city").innerHTML = response.data.city;
   document.querySelector("#weather").innerHTML =
-    response.data.weather[0].description;
-  let roundTemp = Math.round(response.data.main.temp);
-  let temperature = document.querySelector("#temp");
-  temperature.innerHTML = `${roundTemp}°F`;
+    response.data.condition.description;
+  document.querySelector("#temp").innerHTML = Math.round(
+    response.data.temperature.current
+  );
+  let humid = response.data.temperature.humidity;
   let humidity = document.querySelector("#humidity");
-  let currentHumidity = response.data.main.humidity;
-  humidity.innerHTML = `Humidity: ${currentHumidity}%`;
+  humidity.innerHTML = `Humidity: ${humid}%`;
+  let windSpeed = Math.round(response.data.wind.speed);
   let wind = document.querySelector("#wind");
-  let roundedSpeed = Math.round(response.data.wind.speed);
-  wind.innerHTML = `Wind: ${roundedSpeed}mph`;
+  wind.innerHTML = `Wind: ${windSpeed} mph`;
+  console.log(response);
 }
 
 function search(event) {
   event.preventDefault();
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let apiKey = "tb9021cb57677162636fa4a00f5o70a3";
   let units = "imperial";
   let city = document.querySelector("#city-search").value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-  console.log(event);
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
+
   axios.get(apiUrl).then(showWeather);
 }
 let form = document.querySelector("#search-form");

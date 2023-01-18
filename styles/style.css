@@ -2,10 +2,10 @@ body {
   font-family: "Pacifico", cursive;
 }
 h1 {
-  text-align: left;
+  text-align: center;
   font-weight: 200;
-  font-size: 25px;
-  margin: 0;
+  font-size: 30px;
+  margin-top: 40px;
 }
 ul {
   list-style: none;
@@ -28,18 +28,17 @@ img {
 
 .github {
   display: block;
-  margin: 0 auto;
+  margin-top: 0;
+  text-align: center;
 }
-#temp {
-  font-size: 70px;
-}
+
 .wrap {
-  margin: 30px auto;
+  margin: 0 auto;
   max-width: 700px;
 }
 .weather-app {
   border: 1px solid black;
-
+  border-radius: 6px;
   padding: 25px;
 
   background: radial-gradient(
@@ -50,6 +49,18 @@ img {
     rgb(234, 251, 251) 77.6%,
     rgb(240, 251, 244) 100.7%
   );
+}
+.fahrenheit {
+  font-size: 25px;
+}
+.celsius {
+  font-size: 25px;
+}
+.weather-details {
+  text-align: right;
+}
+#temp {
+  font-size: 45px;
 }
 #city-search {
   width: 100%;
@@ -73,8 +84,9 @@ img {
   font-family: "Courier New", Courier, monospace;
 }
 #date {
-  text-align: left;
+  text-align: center;
 }
 #weather {
-  text-align: left;
+  text-align: center;
+  text-transform: capitalize;
 }

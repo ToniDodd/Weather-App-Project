@@ -28,32 +28,32 @@
     <div class="container">
       <div class="wrap">
       <div class="weather-app">
-        <form id="search-form">
+        <form id="search-form" class="mb-7">
           <div class="row">
-          <div class="col-8">
-            <input type="text" placeholder="Enter a city..." autocomplete="off" autofocus="on" id="city-search" />
+          <div class="col-9">
+            <input type="search" class="form-control" placeholder="Enter a city..." autocomplete="off" autofocus="on" id="city-search" />
           </div>
           <div class="col-3">
-           <input type="submit" id="city-submit" value="Search" />
+           <input type="submit" id="city-submit" value="Search" class="btn btn-primary"/>
           </div>
         </form>
-        <h1 id="city">Eugene, OR</h1>
+        <h1 id="city">Eugene</h1>
           <ul>
           <li id="date">Friday 10:02</li>
           <li id="weather">Cloudy</li>
           </ul>
         <div class="row">
         <div class="col-6">
-        <ul class="currently">
         
         
-        <div>
-          <span id="temp">43</span>
-          
-          </span>
+        
+        <div class="d-flex weather-temperature">
+          <img  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="broken-clouds" id="icon">
+          <p id="temp">45°</p>
+         
           </div>
         
-          </ul>
+          
         </div>
         <div class="col-6">
         <ul class="weather-details">
