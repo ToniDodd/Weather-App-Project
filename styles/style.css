@@ -4,8 +4,7 @@ body {
 h1 {
   text-align: center;
   font-weight: 200;
-  font-size: 30px;
-  margin-top: 40px;
+  font-size: 50px;
 }
 ul {
   list-style: none;
@@ -14,13 +13,20 @@ ul {
 }
 form {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 12px;
+
   width: 100%;
 }
 
 img {
+  position: relative;
+  top: -20px;
   height: 85px;
   width: 85px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .currently {
   text-align: left;
@@ -50,6 +56,7 @@ img {
     rgb(240, 251, 244) 100.7%
   );
 }
+
 .fahrenheit {
   font-size: 25px;
 }
@@ -59,8 +66,19 @@ img {
 .weather-details {
   text-align: right;
 }
+.units {
+  position: relative;
+  left: 5px;
+  color: black;
+}
+.link {
+  color: #0069d9;
+}
+
 #temp {
-  font-size: 45px;
+  position: relative;
+  top: -20px;
+  font-size: 50px;
 }
 #city-search {
   width: 100%;
@@ -86,7 +104,7 @@ img {
 #date {
   text-align: center;
 }
-#weather {
+#weather:first-letter {
   text-align: center;
   text-transform: capitalize;
 }
