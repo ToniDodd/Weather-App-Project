@@ -74,33 +74,7 @@ a {
 .link {
   color: #0069d9;
 }
-.forecast-details-wrap {
-  text-decoration: none;
-  text-align: right;
-  position: relative;
-  top: -105px;
-}
-.forecast-temperatures {
-  text-align: left;
-  position: relative;
-  right: -47px;
-  top: -45px;
-}
-.forecast-wrap {
-  border: 1px dotted black;
-  width: 100%;
-  margin-left: 25px;
-  margin-bottom: 50px;
-}
-#day {
-  text-align: left;
-  position: relative;
-  right: -50px;
-}
-#forcast-icon {
-  position: relative;
-  right: 235px;
-}
+
 #temp {
   position: relative;
   top: -20px;
