@@ -23,6 +23,10 @@ function formatDate(timestamp) {
 
   return `${day} ${hours}:${minutes}`;
 }
+function showForecast() {
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = "forecast";
+}
 
 function showWeather(response) {
   console.log(response);
@@ -88,5 +92,7 @@ celsius.addEventListener("click", celsiusConvert);
 
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", fahrenheitConvert);
+
+showForecast();
 
 search("Eugene");

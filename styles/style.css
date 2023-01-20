@@ -66,6 +66,26 @@ a {
 .weather-details {
   text-align: right;
 }
+.forecast-details {
+  text-align: right;
+}
+.forecast-icon {
+  position: relative;
+  top: 20px;
+  right: 5px;
+}
+.forecast-day {
+  position: relative;
+  right: 7px;
+}
+.forcast-wrap {
+  border: 1px solid black;
+}
+#forecast-icon {
+  height: 48px;
+
+  width: 48px;
+}
 .units {
   position: relative;
   left: 5px;
@@ -73,6 +93,10 @@ a {
 }
 .link {
   color: #0069d9;
+}
+.forecast-background {
+  border: 1px solid black;
+  background: white;
 }
 
 #temp {
