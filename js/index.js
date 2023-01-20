@@ -25,7 +25,28 @@ function formatDate(timestamp) {
 }
 function showForecast() {
   let forecast = document.querySelector("#forecast");
-  forecast.innerHTML = "forecast";
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+                <div class="col-2">
+                  <div class="d-flex weather-temperature">
+                    <ul>
+                    <li id="forecast-day">${day}</li>
+                      <div class="forecast-icon"><img  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="broken-clouds" id="forecast-icon"></div>
+                      <li id="forecast-temp">35°F</li>
+                    </ul>
+                  </div>
+                </div>
+               
+              `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
 }
 
 function showWeather(response) {
