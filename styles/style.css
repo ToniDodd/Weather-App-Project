@@ -74,7 +74,13 @@ a {
 .link {
   color: #0069d9;
 }
-
+#day {
+  text-align: left;
+}
+#forcast-icon {
+  position: relative;
+  right: 180px;
+}
 #temp {
   position: relative;
   top: -20px;
