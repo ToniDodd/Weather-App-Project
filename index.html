@@ -27,48 +27,41 @@
   <body>
     <div class="container">
       <div class="wrap">
-      <div class="weather-app">
-        <form id="search-form">
-          <div class="row">
-          <div class="col-9">
-            <input type="search" class="form-control" placeholder="Enter a city..." autocomplete="off" autofocus="on" id="city-search" />
-          </div>
-          <div class="col-3">
-           <input type="submit" id="city-submit" value="Search" class="btn btn-primary"/>
-          </div>
-        </form>
-        <h1 id="city"></h1>
-          <ul>
-          <li id="date"></li>
-          <li id="weather"></li>
-          </ul>
-        <div class="row">
-        <div class="col-6">
-        
-        
-        
-        <div class="d-flex weather-temperature">
-          <img  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="broken-clouds" id="icon">
-          <p id="temp"></p>
-          <span class="units"> <a href="#" id="fahrenheit">°F </a>|<a href="#" id="celsius">°C</a></span>
-         
-          </div>
-        
+        <div class="weather-app">
+            <form id="search-form">
+              <div class="row">
+                <div class="col-9">
+                          <input type="search" class="form-control" placeholder="Enter a city..." autocomplete="off" autofocus="on" id="city-search" />
+                </div>
+                <div class="col-3">
+                          <input type="submit" id="city-submit" value="Search" class="btn btn-primary"/>
+                </div>
+            </form>
+                        <h1 id="city"></h1>
+                        <ul>
+                        <li id="date"></li>
+                        <li id="weather"></li>
+                        </ul>
+              <div class="row">
+                <div class="col-6">
+                  <div class="d-flex weather-temperature">
+                      <img  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="broken-clouds" id="icon">
+                      <p id="temp"></p>
+                      <span class="units"> <a href="#" id="fahrenheit">°F </a>|<a href="#" id="celsius">°C</a></span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <ul class="weather-details">
+                    <li id="humidity">Humidity: 77%</li>
+                    <li id="wind">Wind: 2mph</li>
+                  </ul>
+                </div>
           
+              </div>
+          </div>
         </div>
-        <div class="col-6">
-        <ul class="weather-details">
-        
-        <li id="humidity">Humidity: 77%</li>
-        <li id="wind">Wind: 2mph</li>
-        </ul>
-        </div>
-       
-      </div></div>
-      </div>
-        
-      </div>
-      
+          
+      </div> 
     </div>
     <p class="github"><a class="link" href="https://github.com/ToniDodd/Weather-App-Project">Open-source code</a> by Toni Dodd</p>
     
