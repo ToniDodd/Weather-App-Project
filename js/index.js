@@ -23,7 +23,8 @@ function formatDate(timestamp) {
 
   return `${day} ${hours}:${minutes}`;
 }
-function showForecast() {
+function showForecast(response) {
+  console.log(response.data);
   let forecast = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -47,6 +48,14 @@ function showForecast() {
 
   forecastHTML = forecastHTML + `</div>`;
   forecast.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = `tb9021cb57677162636fa4a00f5o70a3`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=imperial`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(showForecast);
 }
 
 function showWeather(response) {
@@ -76,6 +85,8 @@ function showWeather(response) {
   );
 
   icon.setAttribute("alt", response.data.condition.icon);
+
+  getForecast(response.data.coordinates);
 }
 
 function search(city) {
@@ -113,7 +124,5 @@ celsius.addEventListener("click", celsiusConvert);
 
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", fahrenheitConvert);
-
-showForecast();
 
 search("Eugene");
