@@ -5,6 +5,7 @@ h1 {
   text-align: center;
   font-weight: 200;
   font-size: 50px;
+  padding: 10px;
 }
 ul {
   list-style: none;
@@ -27,6 +28,9 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+hr {
+  padding: 15px;
 }
 .currently {
   text-align: left;
@@ -78,8 +82,8 @@ a {
   position: relative;
   right: 7px;
 }
-.forcast-wrap {
-  border: 1px solid black;
+#forecast-temp-min {
+  opacity: 0.6;
 }
 #forecast-icon {
   height: 48px;
