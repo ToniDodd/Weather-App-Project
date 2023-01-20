@@ -1,0 +1,136 @@
+body {
+  font-family: "Pacifico", cursive;
+}
+h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 50px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 15px;
+}
+form {
+  text-align: center;
+  margin-top: 12px;
+
+  width: 100%;
+}
+
+img {
+  position: relative;
+  top: -20px;
+  height: 85px;
+  width: 85px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.currently {
+  text-align: left;
+}
+
+.github {
+  display: block;
+  margin-top: 0;
+  text-align: center;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.weather-app {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 25px;
+
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+}
+
+.fahrenheit {
+  font-size: 25px;
+}
+.celsius {
+  font-size: 25px;
+}
+.weather-details {
+  text-align: right;
+}
+.units {
+  position: relative;
+  left: 5px;
+  color: black;
+}
+.link {
+  color: #0069d9;
+}
+.forecast-details-wrap {
+  text-decoration: none;
+  text-align: right;
+  position: relative;
+  top: -105px;
+}
+.forecast-temperatures {
+  text-align: left;
+  position: relative;
+  right: -47px;
+  top: -45px;
+}
+.forecast-wrap {
+  border: 1px dotted black;
+  width: 100%;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+#day {
+  text-align: left;
+  position: relative;
+  right: -50px;
+}
+#forcast-icon {
+  position: relative;
+  right: 235px;
+}
+#temp {
+  position: relative;
+  top: -20px;
+  font-size: 50px;
+}
+#city-search {
+  width: 100%;
+  padding: 5px 8px;
+  margin-bottom: 15px;
+  border: 1px solid #040505;
+  border-radius: 4px;
+  line-height: 1.5;
+  font-family: "Courier New", Courier, monospace;
+}
+#city-submit {
+  width: 100%;
+  padding: 5px 8px;
+  margin-bottom: 15px;
+
+  border-radius: 4px;
+  line-height: 1.5;
+  color: #fff;
+  background: #0069d9;
+  border: #0069d9;
+  font-family: "Courier New", Courier, monospace;
+}
+#date {
+  text-align: center;
+}
+#weather:first-letter {
+  text-align: center;
+  text-transform: capitalize;
+}
