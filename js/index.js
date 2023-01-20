@@ -120,12 +120,6 @@ function searchCity(event) {
   search(cityInput.value);
 }
 
-function celsiusConvert(event) {
-  event.preventDefault();
-  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
-  let unitTemperature = document.querySelector("#temp");
-  unitTemperature.innerHTML = Math.round(celsiusTemperature);
-}
 function fahrenheitConvert(event) {
   event.preventDefault();
   let unitTemperature = document.querySelector("#temp");
@@ -135,11 +129,5 @@ function fahrenheitConvert(event) {
 let fahrenheitTemperature = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
-
-let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", celsiusConvert);
-
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", fahrenheitConvert);
 
 search("Eugene");
